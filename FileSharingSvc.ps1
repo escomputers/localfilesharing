@@ -1,8 +1,8 @@
 # Open another PowerShell window and run ngrok
-Start-Process -FilePath "powershell.exe" -ArgumentList "-NoExit", "-Command", "ngrok http http://localhost:8000"
+Start-Process -FilePath "powershell.exe" -ArgumentList "-NoExit", "-Command", "ngrok http http://localhost:5001"
 
 # Command to run the Python script
-$pythonCommand = "python3 C:\httpsrv.py"
+$pythonCommand = "python C:\httpsrv.py"
 
 # Execute the Python script
 Invoke-Expression $pythonCommand
